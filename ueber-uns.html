@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Über uns & Team - Struktur & Raum</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .about-hero {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .about-hero-image {
+            display: block;
+            margin: 0 auto 40px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-hero-content {
+            text-align: left;
+        }
+
+        .values {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .value-item {
+            flex: 1;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e9ecef;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease;
+        }
+
+        .value-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .value-item h4 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .value-item p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 900px) {
+            .values {
+                flex-wrap: wrap;
+            }
+            .value-item {
+                min-width: 200px;
+            }
+        }
+
+        .team-section {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .team-card-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f4f4f4;
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f8f9fa;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .team-card-header h4 {
+            margin: 0 0 5px 0;
+            font-size: 1.3rem;
+            color: #2c3e50;
+        }
+
+        .role {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .bio {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .profile-details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            margin: auto 0 0 0;
+        }
+
+        .profile-details dt {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 12px;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-details dt:first-child {
+            margin-top: 0;
+        }
+
+        .profile-details dd {
+            margin: 4px 0 0 0;
+            color: #666;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            justify-content: center;
+            margin: 20px 0 40px 0;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 0 20px 0;
+        }
+
+        .site-footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px 0;
+            border-top: 1px solid #eaeaea;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Architekturbüro Struktur &amp; Raum</h1>
+            <p>Design &amp; Planung mit Blick für Menschen und Umwelt</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="projekte.html">Projekte</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="philosophie.html">Philosophie</a></li>
+                <li><a href="kontakt.html">Kontakt &amp; Zeiten</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="about-hero">
+            <img src="images/team1.jpg" alt="Unser Büro" class="about-hero-image" />
+            
+            <div class="about-hero-content">
+                <h2>Über uns</h2>
+                <p class="lead">Wir sind ein kleines Architekturbüro, das klare Formen, nachhaltige Lösungen und menschliche Räume vereint. Unsere Entwürfe kombinieren Qualität, Materialbewusstsein und Nähe zum Menschen.</p>
+                <p>Die Stärke unseres Teams liegt in der Verbindung aus Entwurf, technischer Planung und persönlicher Betreuung – für jedes Projekt ein starker Partner.</p>
+                
+                <div class="values">
+                    <div class="value-item">
+                        <h4>Nachhaltig</h4>
+                        <p>Ressourcenschonende Konzepte, lange Nutzungszyklen und effiziente Haustechnik.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Pragmatisch</h4>
+                        <p>Realistische Lösungen, die sich sauber bauen lassen und im Alltag funktionieren.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Persönlich</h4>
+                        <p>Kurze Wege, klare Kommunikation und ein partnerschaftlicher Umgang.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Innovativ</h4>
+                        <p>Einsatz moderner Planungstools und zukunftsorientierte Konzepte für smarte Gebäude.</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Transparent</h4>
+                        <p>Klare Kostenkontrolle, offene Prozesse und eine ehrliche Beratung von Anfang an.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h3 class="section-title">Das Team</h3>
+            
+            <div class="team-grid">
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/maria.jpg" alt="Maria Stein" class="avatar" />
+                        <div>
+                            <h4>Maria Stein</h4>
+                            <p class="role">Inhaberin &amp; Büroleitung</p>
+                        </div>
+                    </header>
+                    <p class="bio">Dipl.-Ing. mit Fokus auf Konzeptentwicklung, Projektleitung und nachhaltige Architektur.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>45 Jahre</dd>
+                        <dt>Interessen</dt><dd>Kunstgeschichte, Skizzieren, Denkmalschutz</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Nationalgalerie Berlin; skandinavische Holzhäuser</dd>
+                    </dl>
+                </article>
+
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/w1.jpg" alt="Lena Hoffmann" class="avatar" />
+                        <div>
+                            <h4>Lena Hoffmann</h4>
+                            <p class="role">Senior Architektin</p>
+                        </div>
+                    </header>
+                    <p class="bio">Leitet Wettbewerbsprojekte und Entwürfe mit Fokus auf Materialehrlichkeit.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>38 Jahre</dd>
+                        <dt>Interessen</dt><dd>Materialforschung, Reisen, Fotografie</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Villa Savoye; moderne Museumsbauten</dd>
+                    </dl>
+                </article>
+
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/m1.jpg" alt="Jonas Keller" class="avatar" />
+                        <div>
+                            <h4>Jonas Keller</h4>
+                            <p class="role">Projektleiter</p>
+                        </div>
+                    </header>
+                    <p class="bio">Verantwortlich für Ausführung und Qualitätssicherung auf der Baustelle.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>42 Jahre</dd>
+                        <dt>Interessen</dt><dd>Holzbau, Detailplanung, Segeln</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Nordische Holzhäuser; traditionelle Scheunen</dd>
+                    </dl>
+                </article>
+
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/w2.jpg" alt="Sophie Meier" class="avatar" />
+                        <div>
+                            <h4>Sophie Meier</h4>
+                            <p class="role">Entwurfsarchitektin</p>
+                        </div>
+                    </header>
+                    <p class="bio">Fokussiert auf Raumkonzept und Innenraumgestaltung.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>34 Jahre</dd>
+                        <dt>Interessen</dt><dd>Innenarchitektur, Typografie, Kochen</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Bauhaus; skandinavische Minimalbauten</dd>
+                    </dl>
+                </article>
+
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/m2.jpg" alt="Marc Vogel" class="avatar" />
+                        <div>
+                            <h4>Marc Vogel</h4>
+                            <p class="role">Technische Planung</p>
+                        </div>
+                    </header>
+                    <p class="bio">Schnittstelle zwischen Entwurf und Haustechnik – sorgt für ausführbare Lösungen.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>36 Jahre</dd>
+                        <dt>Interessen</dt><dd>Statik, Energiesysteme, Mountainbiken</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Moderne Ingenieurbauten; Brücken</dd>
+                    </dl>
+                </article>
+
+                <article class="team-card">
+                    <header class="team-card-header">
+                        <img src="images/m3.jpg" alt="Lukas Stein" class="avatar" />
+                        <div>
+                            <h4>Lukas Stein</h4>
+                            <p class="role">Junior Architektin</p>
+                        </div>
+                    </header>
+                    <p class="bio">Unterstützt Entwurf und Visualisierung; bringt frische Ideen mit.</p>
+                    <dl class="profile-details">
+                        <dt>Alter</dt><dd>31 Jahre</dd>
+                        <dt>Interessen</dt><dd>3D-Visualisierung, Fahrradtouren, Ausstellungen</dd>
+                        <dt>Lieblingsbauwerke</dt><dd>Zeitgenössische Wohnbauten; städtische Umbauten</dd>
+                    </dl>
+                </article>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px;"><a href="kontakt.html" style="color: #3498db; text-decoration: none; font-weight: bold;">Kontakt &amp; Termine &rarr;</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Architekturbüro Struktur &amp; Raum | <a href="impressum.html" style="color: #777;">Impressum</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
